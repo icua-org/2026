@@ -218,7 +218,7 @@ HTML 파일에서 `.speaker-card` 섹션을 편집
 
 ## 📞 연락처
 
-- **이메일**: icua2026@kaist.ac.kr
+- **이메일**: icua.committee@gmail.com
 - **주최**: KAIST Urban Analytics Lab
 - **위치**: KAIST, 대전, 대한민국
 
