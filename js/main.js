@@ -100,15 +100,19 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        
-        // Show success message (in a real application, you would send this to a server)
-        alert('Thank you for your message! We will get back to you soon.');
-        
-        // Reset form
-        contactForm.reset();
+
+        const name = document.getElementById('contactName')?.value.trim() || '';
+        const email = document.getElementById('contactEmail')?.value.trim() || '';
+        const subject = document.getElementById('contactSubject')?.value.trim() || '';
+        const message = document.getElementById('contactMessage')?.value.trim() || '';
+
+        const recipient = 'icua.comittee@gmail.com';
+        const mailSubject = encodeURIComponent(subject || 'ICUA 2026 Inquiry');
+        const mailBody = encodeURIComponent(
+            `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+        );
+
+        window.location.href = `mailto:${recipient}?subject=${mailSubject}&body=${mailBody}`;
     });
 }
 
