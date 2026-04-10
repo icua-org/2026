@@ -1062,6 +1062,10 @@ body {
         gap: 1.5rem;
     }
 
+    .about-highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -1085,6 +1089,10 @@ body {
 }
 
 @media (max-width: 640px) {
+    .container {
+        padding: 0 16px;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
@@ -1114,12 +1122,22 @@ body {
         font-size: 1.8rem;
     }
 
+    .about-highlights {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .highlight-item {
+        width: 100%;
+        max-width: 100%;
+        padding: 1.25rem 1rem;
+    }
+
     .speakers-grid,
     .speakers-grid.invited {
         grid-template-columns: 1fr; /* 모바일에서 1열 */
     }
-    }
-
     .timeline-events {
         padding-left: 2rem;
     }
