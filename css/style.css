@@ -835,6 +835,21 @@ body {
     line-height: 1.7;
 }
 
+.registration-fees {
+    margin-bottom: 2rem;
+}
+
+.registration-fees p {
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.registration-fees p:last-child {
+    margin-bottom: 0;
+}
+
 .cta-buttons {
     display: flex;
     gap: 1rem;
