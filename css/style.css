@@ -1161,6 +1161,10 @@ body {
         padding-left: 1rem;
     }
 
+    .timeline-item::before {
+        left: -2rem;
+    }
+
     .day-header {
         flex-direction: column;
         align-items: flex-start;
