@@ -658,6 +658,62 @@ body {
     border: 2px solid var(--secondary-color);
 }
 
+.session-speakers {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    background: var(--light-color);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+}
+
+.session-speakers h5 {
+    font-size: 1rem;
+    color: var(--dark-color);
+    margin-bottom: 0.75rem;
+}
+
+.session-track {
+    margin-bottom: 1rem;
+}
+
+.session-track:last-child {
+    margin-bottom: 0;
+}
+
+.session-track h6 {
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.session-speakers ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.session-speakers li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.45rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.session-speakers li:last-child {
+    margin-bottom: 0;
+}
+
+.session-speakers li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 5px;
+    height: 5px;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+
 /* Venue Section */
 .venue-section {
     background: var(--light-color);
