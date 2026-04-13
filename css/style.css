@@ -862,7 +862,6 @@ body {
     margin-bottom: 1rem;
     background: var(--light-color);
     border-radius: 10px;
-    border-left: 4px solid var(--secondary-color);
 }
 
 .dates-list i {
@@ -993,6 +992,30 @@ body {
 
 .contact-item p {
     color: var(--text-color);
+}
+
+.committee-list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.committee-list li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.committee-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.75em;
+    width: 5px;
+    height: 5px;
+    background: var(--secondary-color);
+    border-radius: 50%;
 }
 
 .contact-form {
